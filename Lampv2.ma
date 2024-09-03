@@ -1,6 +1,6 @@
 //Maya ASCII 2025ff03 scene
 //Name: Lampv2.ma
-//Last modified: Tue, Sep 03, 2024 12:38:03 PM
+//Last modified: Tue, Sep 03, 2024 12:45:02 PM
 //Codeset: 1252
 requires maya "2025ff03";
 requires -nodeType "materialxStack" -nodeType "MaterialXSurfaceShader" -dataType "MxDocumentStackData"
@@ -9,25 +9,24 @@ requires -nodeType "aiOptions" -nodeType "aiAOVDriver" -nodeType "aiAOVFilter" -
 		 "mtoa" "5.4.2.1";
 requires -nodeType "polyPlatonic" "modelingToolkit" "0.0.0.0";
 requires -nodeType "polyBoolean" "polyBoolean" "1.1";
-requires "mtoa" "5.4.2.1";
 currentUnit -l centimeter -a degree -t film;
 fileInfo "application" "maya";
 fileInfo "product" "Maya 2025";
 fileInfo "version" "2025";
 fileInfo "cutIdentifier" "202407121012-8ed02f4c99";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 22631)";
-fileInfo "UUID" "4F1B9609-4B21-05CD-9592-DD8185371DB2";
+fileInfo "UUID" "B0BD2CE2-4528-8DE5-158A-148E94989E92";
 createNode transform -s -n "persp";
 	rename -uid "557C9623-4DEB-44AD-29E2-5581BEBFA387";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 9.734123881062029 4.6243159536541931 -4.4977966891109755 ;
-	setAttr ".r" -type "double3" -10.200000000001349 3354.7999999995923 0 ;
+	setAttr ".t" -type "double3" 5.2968133609930144 2.3935091573530736 -3.2065291287636395 ;
+	setAttr ".r" -type "double3" -6.6000000000011161 3359.9999999995689 0 ;
 	setAttr ".rpt" -type "double3" 5.2893614286180817e-16 -1.0473514448781954e-15 7.1983021500078981e-16 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "9DF45B39-4AF7-0E97-1F87-EBBF3D1C1D61";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999979;
-	setAttr ".coi" 10.895220965297238;
+	setAttr ".coi" 6.114768563131447;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -523,20 +522,20 @@ createNode materialxStack -n "materialXStackShape1" -p "materialXStack1";
 	setAttr -k off ".v";
 	setAttr ".docs" -type "string" "[\n    {\n        \"document\": \"AAABT3icdZDBCoMwDIbvPkXIA6yTXXaoysDjcLAXkKCRFbSWWod7+xWnxTl2zJ/k+/9EZlPXwpPtoHqdYHw4YpZGsiPHVlE7bVunM6YRgKzIloaUdqCp4wRDHSO4l/HKMNqGKh4eVLNF0H3NNTcJXu7F7ZqXRV6GHQQxQ5eV1XhB79RgsAobtofupue0Hq20Gd03cE32N+7vZZ+YYufhfyXCs9LoDWwZcnc=\",\n        \"name\": \"document1\"\n    }\n]\n";
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "94BC351C-4569-8C74-1DE9-B4B35ED1A29C";
+	rename -uid "242D08CC-4606-3E7D-40AC-E092F2D0D953";
 	setAttr -s 6 ".lnk";
 	setAttr -s 6 ".slnk";
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "4BD5CEF9-45C8-1026-3584-30B22AF6F06B";
+	rename -uid "733A018A-449C-9CC7-3855-89BF64CFB220";
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "75AEC210-4153-81A3-809C-79A39430DB76";
+	rename -uid "30B7B42A-4A73-403F-FECF-49AD564CF5B1";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "E7CBBEBD-4FA0-10EF-FF4A-B7931F99CA40";
+	rename -uid "1DE31B47-44E2-FB40-1C9E-65AB61EBB0BA";
 createNode displayLayer -n "defaultLayer";
 	rename -uid "D87522E4-412D-0C0E-E3C2-668447A3ECB9";
 	setAttr ".ufem" -type "stringArray" 0  ;
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "1BFB17E7-4A0D-ACC4-320C-00BCF4B2CFFE";
+	rename -uid "7DD3A062-4493-6374-9F4F-CD93262CCB91";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "D69E7498-4617-7B49-32C2-AE99635E8026";
 	setAttr ".g" yes;
